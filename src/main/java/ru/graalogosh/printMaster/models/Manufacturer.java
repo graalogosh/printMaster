@@ -1,4 +1,4 @@
-package ru.graalogosh.models;
+package ru.graalogosh.printMaster.models;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
