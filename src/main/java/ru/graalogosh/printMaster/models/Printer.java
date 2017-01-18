@@ -1,5 +1,6 @@
 package ru.graalogosh.printMaster.models;
 
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
@@ -10,6 +11,7 @@ import java.util.Date;
  * Created by Anton Mukovozov (graalogosh@gmail.com) on 18.01.2017.
  */
 @Data
+@Builder
 public class Printer {
 
     @Id
@@ -24,17 +26,6 @@ public class Printer {
     private Cartridge currentCartridge;
 
     private String comment;
-
-    public Printer(Manufacturer manufacturer, String model, PrinterType type, Date purchaseDate, String room, InetAddress IPAddress, Cartridge currentCartridge, String comment) {
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.type = type;
-        this.purchaseDate = purchaseDate;
-        this.room = room;
-        this.IPAddress = IPAddress;
-        this.currentCartridge = currentCartridge;
-        this.comment = comment;
-    }
 }
 
 //TODO create types
