@@ -14,4 +14,6 @@ public class Manufacturer {
 
     private String shortName;
     private String fullName;
+
+    private String comment;
 }
