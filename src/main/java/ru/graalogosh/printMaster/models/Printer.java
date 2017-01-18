@@ -28,7 +28,6 @@ public class Printer {
     private String comment;
 }
 
-//TODO create types
 enum PrinterType {
     Laser,
     Matrix,
