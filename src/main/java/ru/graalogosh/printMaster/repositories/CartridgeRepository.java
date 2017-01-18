@@ -6,6 +6,6 @@ import ru.graalogosh.printMaster.models.Cartridge;
 /**
  * Created by Anton Mukovozov (graalogosh@gmail.com) on 18.01.2017.
  */
-public interface CartridgerRepository extends MongoRepository<Cartridge, String> {
+public interface CartridgeRepository extends MongoRepository<Cartridge, String> {
 
 }

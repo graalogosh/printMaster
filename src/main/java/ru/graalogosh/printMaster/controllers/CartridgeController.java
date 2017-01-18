@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import ru.graalogosh.printMaster.models.Cartridge;
-import ru.graalogosh.printMaster.repositories.CartridgerRepository;
+import ru.graalogosh.printMaster.repositories.CartridgeRepository;
 
 import java.util.List;
 
@@ -16,10 +16,10 @@ import java.util.List;
 @RequestMapping("/api/cartridge")
 public class CartridgeController {
     @Autowired
-    private CartridgerRepository cartridgerRepository;
+    private CartridgeRepository cartridgeRepository;
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Cartridge> getCartriges() {
-        return cartridgerRepository.findAll();
+        return cartridgeRepository.findAll();
     }
 }
