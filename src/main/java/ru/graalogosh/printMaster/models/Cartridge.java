@@ -19,7 +19,7 @@ public class Cartridge {
     private Manufacturer manufacturer;
     private Printer printer;
     private Date purchaseDate;
-    private Date lastRefresh;
+    private Refill lastRefill;
     private Integer avgLifeDays;
     private Color color;
 
