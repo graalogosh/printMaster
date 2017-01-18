@@ -16,6 +16,8 @@ public class Cartridge {
     @Id
     private String id;
 
+    private String inventoryNumber;
+    private String serialNumber;
     private Manufacturer manufacturer;
     private Printer printer;
     private Date purchaseDate;
