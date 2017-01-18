@@ -25,6 +25,16 @@ public class Printer {
 
     private String comment;
 
+    public Printer(Manufacturer manufacturer, String model, PrinterType type, Date purchaseDate, String room, InetAddress IPAddress, Cartridge currentCartridge, String comment) {
+        this.manufacturer = manufacturer;
+        this.model = model;
+        this.type = type;
+        this.purchaseDate = purchaseDate;
+        this.room = room;
+        this.IPAddress = IPAddress;
+        this.currentCartridge = currentCartridge;
+        this.comment = comment;
+    }
 }
 
 //TODO create types
