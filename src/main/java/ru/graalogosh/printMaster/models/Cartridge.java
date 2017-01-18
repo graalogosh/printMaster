@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.awt.*;
 import java.util.Date;
 
 /**
@@ -20,6 +21,7 @@ public class Cartridge {
     private Date purchaseDate;
     private Date lastRefresh;
     private Integer avgLifeDays;
+    private Color color;
 
     private String comment;
 
@@ -28,3 +30,4 @@ public class Cartridge {
         return manufacturer.equals(printer.getManufacturer());
     }
 }
+
