@@ -17,3 +17,4 @@ hs_err_pid*
 /mvnw.cmd
 /printMaster.iml
 /target/
+/node_modules/
