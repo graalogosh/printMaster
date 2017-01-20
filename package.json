@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "dependencies": {
     "bootstrap": "3.3.7",
-    "webpack": "1.14.0",
-    "vue": "2.1.10"
+    "vue": "2.1.10",
+    "lodash": "4.17.4"
+  },
+  "devDependencies": {
+    "webpack": "beta"
   }
 }
