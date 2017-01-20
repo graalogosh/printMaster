@@ -6,5 +6,12 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: './src/main/resources/static/app'
-    }
-}
+    },
+    resolve: {
+        //modules: ["node_modules"],
+        alias: {
+            'vue$': 'vue/dist/vue.common.js'
+        }
+    },
+};
+
