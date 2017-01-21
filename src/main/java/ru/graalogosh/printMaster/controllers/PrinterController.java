@@ -1,12 +1,11 @@
 package ru.graalogosh.printMaster.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import ru.graalogosh.printMaster.models.Printer;
 import ru.graalogosh.printMaster.repositories.PrinterRepository;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -21,5 +20,17 @@ public class PrinterController {
     @RequestMapping(method = RequestMethod.GET)
     public List<Printer> getPrinters() {
         return printerRepository.findAll();
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    @ResponseBody
+    public Printer createPrinter(
+            @RequestBody Printer printer
+    ) {
+        if (printer.getPurchaseDate() == null) {
+            printer.setPurchaseDate(new Date());
+        }
+        printerRepository.save(printer);
+        return printer;
     }
 }
